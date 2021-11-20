@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+        sans-serif;
+}
+body{
+    /* background-color: #0c0b10; */
+    background-color: #232228;
+}
+/* Navbar */
+.nav{
+    padding: 20px 30px;
+    background-color: #0c0b10;
+}
+.header{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    color: white;
+}
+.nav-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 600;
+    color: #FFC107;
+}
+
+.search-field{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.search{
+    background-color: #232228;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.search input{
+    background: none;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    padding: 3px;
+    color: white;
+    width: 300px;
+}
+/* content */
+.sidebar{
+    background-color: #0c0b10;
+    height: 100%;
+    padding-bottom: 200px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1.1fr 4fr;
+}
+
+.main-content{
+    padding-left: 20px;
+    padding-right: 40px;
+}
+.profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    flex-direction: column;
+}
+.profil img{
+    width: 80px;
+}
+.nama{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-top: 10px;
+}
+.profile-desc{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: -18px;
+    color: rgb(151, 151, 151);
+}
+.menu{
+    margin-top: 10px;
+}
+.item{
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: 2.5fr 6fr;
+    color: white;
+    margin: 5px 0px;
+    padding-left: 40px;
+
+}
+.font-awesome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu a{
+    text-decoration: none;
+}
+.menu .item:hover{
+    background-color: #31314636;
+}
+ul li.active a{
+    border-left: 3px solid #FFC107;
+    background-color: #31314636;
+}
+.menu ul li a{
+    color: white;
+}
+.sub-main{
+    color: white;
+    padding-top: 20px;
+
+}
+.overview{
+    padding-left: 20px;
+}
+.sub-main h5{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.ov-item{
+    background-color: rgba(255, 255, 255, .2);
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 100px;
+}
+.ov-item p{
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.add-button{
+    margin-bottom: 20px;
+}

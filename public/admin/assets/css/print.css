@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+        sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.wrapper img{
+    width: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.col{
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.judul, .sub-judul{
+    font-weight: 600;
+}
+.judul{
+    font-size: 36px;
+}
+.judul span{
+    font-size: 20px;
+    font-weight: 400;
+}
+.sub-judul{
+    font-size: 18px;
+    margin-top: -50px;
+}
+.sub-judul span{
+    font-size: 12px;
+    font-weight: 400;
+}
+.tanggal{
+    font-weight: 600;
+    position: relative;
+    top: -30px;
+}
+.location{
+    font-size: 1.5em;
+}
+.location-box{
+    margin-top: -30px;
+}
+.kode{
+    font-size: 2em;
+    font-weight: 600;
+}
+.kode-box{
+    position: relative;
+    left: 30px;
+}
+.bold{
+    font-weight: 600;
+}
+.wrapper2{
+    margin-top: 60px;
+}
+.pesawat{
+    font-size: 1.4em;
+}

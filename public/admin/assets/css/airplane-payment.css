@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.06);
+}
+/* Navbar */
+.navbar {
+    background-color: #1F2E35;
+    padding: 20px;
+
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #FFC107 !important;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    margin: 0 5px;
+    text-align: center;
+    color: rgba(255, 255, 255, .5);
+}
+
+.btn {
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+ul li.active {
+    color: white;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Content */
+main{
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+.col-detail{
+    background-color: white;
+    padding: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.bold{
+    font-weight: 800;
+}
+.semi-bold{
+    font-weight: 600;
+}
+.destination{
+    display: flex;
+    align-items: center;
+}
+.kode{
+    font-size: 24px;
+}
+.pembayaran-img{
+    width: 100px;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.button{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+/* Subscirbe */
+.subscribe-section {
+    margin-top: 80px;
+    background-color: #1F2E35;
+    padding: 50px 0;
+    border-bottom: .5px solid rgb(104, 104, 104);
+}
+
+.subs-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+.subs-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subs-text {
+    color: rgb(202, 202, 202);
+}
+
+/* Footer */
+.footer-section {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    background-color: #1F2E35;
+}
+
+.navbar-brand img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.soc-med {
+    color: white;
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.soc-med a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #FFC107;
+    text-decoration: none;
+    color: #1F2E35;
+    margin-right: 5px;
+    border-radius: 50px;
+    transition: .3s all;
+}
+
+.soc-med a:hover {
+    background-color: #1F2E35;
+    color: #FFC107;
+}
+
+.footer-title {
+    transition: .3s all;
+    color: white;
+}
+
+.footer-title:hover {
+    color: #FFC107;
+}
+
+.footer h5 {
+    color: white;
+    font-weight: 500;
+}
+
+.footer ul li a,
+.footer ul li {
+    color: rgba(255, 255, 255, .5);
+    font-weight: 300;
+}
+
+/* Copyright */
+.copyright {
+    color: white;
+    margin-top: 80px;
+    font-weight: 300;
+}
+
+
+/* utility */
+h3 {
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.card {
+    margin: 20px 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+/* DESKTOP */
+@media (min-width: 992px) {
+    .navbar-brand {
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+
+    .nav-item {
+        font-size: 1.1em;
+    }
+
+    /* Jumbotron */
+    .jumbotron {
+        margin-top: 30px;
+    }
+
+    .jumbotron .display-6 {
+        font-size: 48px;
+    }
+
+}

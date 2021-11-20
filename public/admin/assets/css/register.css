@@ -1,0 +1,240 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ :root {
+     --primary: #000000;
+     --secondary: #7A7B7C;
+     --primarywhite: #fffcf9;
+     --secondarywhite: #aaaaaa;
+ }
+ .container2 {
+     font-family: 'Poppins', Arial;
+     display: grid;
+     grid-template-areas: "kiri kanan";
+     grid-template-columns: 1fr 1fr;
+     overflow-x: hidden;
+ }
+  body.dark .container2 .kanan .atas,
+  body.dark .container2 .kanan .bawah {
+      background-color: #32353b;
+      color: white;
+  }
+
+  body.dark .container2 .kanan .bawah .login p,
+  body.dark .container2 .kanan .bawah .input label {
+      color: var(--secondarywhite);
+  }
+
+ .kiri {
+     background-image: url(../img/kereta2.png);
+     background-size: cover;
+     background-color: white;
+     grid-area: kiri;
+     color: rgb(216, 216, 216);
+     height: 100vh;
+     animation-name: slide;
+     animation-duration: 1s;
+     z-index: 3;
+     background-position: center;
+ }
+
+ .kanan {
+     height: 100vh;
+     display: grid;
+     grid-area: kanan;
+     background-color: burlywood;
+     grid-template-areas: "atas"
+         "bawah";
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 6fr;
+     animation-name: transisi;
+     animation-duration: 1s;
+
+ }
+
+ .atas {
+     display: grid;
+     padding: 40px 60px;
+     grid-area: atas;
+     background-color: white;
+     transition: .3s linear;
+ }
+
+ .brand {
+     font-size: 1.2em;
+     font-weight: 600;
+ }
+
+ .brand {
+     display: flex;
+     align-items: center;
+     /* background-color: tomato; */
+ }
+
+ .bawah {
+     grid-area: bawah;
+     background-color: white;
+     padding: 0px 60px;
+     transition: .3s linear;
+ }
+
+ .login {
+     margin-top: -20px;
+     margin-bottom: 30px;
+ }
+
+ .login h1 {
+     font-size: 2.5em;
+     font-weight: 700;
+ }
+
+ .login p {
+     color:var(--secondary);
+     font-size: .7em;
+ }
+
+ .input label {
+     font-weight: 500;
+     color:var(--secondary);
+     font-size: .9em;
+ }
+
+ .input input, #submit{
+     margin: 10px 0;
+     max-width: 100%;
+     width: 100%;
+     height: 2.3em;
+     border-radius: 5px;
+     outline: none;
+     border: 2px solid var(--secondarywhite);
+     padding: 0 10px;
+     font-family: 'Poppins', Arial, Helvetica, sans-serif;
+     font-weight: 600;
+     font-size: 1em;
+     color: rgb(80, 80, 80);
+     transition: all .3s;
+ }
+
+ input:focus {
+     border: 2px solid #7e85e7;
+     box-shadow: 0px 0px 5px rgba(80, 80, 80, 0.6);
+ }
+
+ input::placeholder {
+     color: rgb(167, 167, 167);
+     font-weight: 400;
+     font-size: .9em;
+ }
+
+ #submit {
+     background-color: #7e85e7;
+     border: 1px solid #7e85e7;
+     color: rgb(221, 221, 221);
+     margin-bottom: 20px;
+ }
+
+ #submit:hover {
+     background-color: #6268b6;
+     color: white;
+ }
+
+ .parag {
+     font-size: .8em;
+ }
+
+ .parag a {
+     color: #7e85e7;
+     text-decoration: none;
+ }
+ .toggle {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+ }
+
+ .darkmode {
+     width: 60px;
+     height: 30px;
+     background-color: #7e85e7;
+     border-radius: 50px;
+     color: var(--primarywhite);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 5px;
+     position: relative;
+     font-size: 1.2em;
+ }
+
+ .ball {
+     position: absolute;
+     top: 2px;
+     left: 2px;
+     width: 25px;
+     height: 25px;
+     border-radius: 50%;
+     background-color: rgb(221, 221, 221);
+     transition: .2s linear;
+ }
+
+ #checkbox {
+     opacity: 0;
+     position: absolute;
+ }
+
+ #checkbox:checked+.darkmode .ball {
+     transform: translateX(30px);
+ }
+
+
+ @media only screen and (max-width: 800px) {
+     .container2 {
+         grid-template-areas: "kanan"
+             "kiri";
+         grid-template-columns: 1fr;
+         font-size: .7em;
+     }
+
+     .kiri {
+         display: none;
+     }
+     .brand{
+         justify-content: center;
+         align-items: center;
+     }
+     .darkmode {
+         width: 40px;
+         height: 20px;
+     }
+
+     .ball {
+         width: 16px;
+         height: 16px;
+     }
+
+     #checkbox:checked+.darkmode .ball {
+         transform: translateX(20px);
+     }
+ }
+
+ @keyframes transisi {
+     from {
+         transform: translateX(-1500px);
+         /* transform: scale(0); */
+     }
+
+     to {
+         transform: translateX(0px);
+         /* transform: scale(1); */
+     }
+ }
+ @keyframes slide{
+     from{
+         transform: translateX(-400px);
+     }
+     to{
+         transform: translateX(0px);
+     }
+ }

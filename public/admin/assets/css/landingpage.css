@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+    sans-serif;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+/* Navbar */
+.navbar{
+    background-color: #1F2E35;
+    padding: 20px;
+    
+}
+.navbar-brand{
+    font-weight: 600;
+    color: #FFC107 !important;
+}
+.nav-item{
+    text-transform: uppercase;
+    margin: 0 5px;
+    text-align: center;
+
+}
+.btn{
+    font-weight: 600;
+    margin-top: 5px;
+}
+ul li.active a {
+    border-bottom: 2px solid #FFC107;
+
+}
+.navbar-toggler {
+    border: none;
+}
+/* Jumbotron */
+.jumbotron{
+    background-color: #1F2E35;
+    border-radius: 0px;
+    margin-top: 80px;
+    position: relative;
+}
+.jumbotron img{
+    position: relative;
+    pointer-events: none;
+    margin-bottom: 50px;
+}
+.jumbo-left{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.jumbo-left h2{
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+}
+.jumbo-left p{
+    color: rgb(199, 199, 199);
+    margin: 20px 0;
+}
+.slogan{
+    font-size: 24px !important;
+}
+/* Transport */
+.transport-title{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.transport-item .card img{
+    width: 200px;
+    margin: 20px;
+    transition: .3s;
+}
+.transport-item a{
+    text-decoration: none;
+    color: black;
+}
+.transport-item a .card{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 20px;
+}
+.transport-item a .card:hover img{
+    transform: scale(1.1);
+}
+.transport-item a .card:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.transport{
+    display: flex;
+    justify-content: center;
+}
+.ticket-button{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.transport-section{
+    margin-bottom: 150px;
+}
+
+/* WHY */
+.why-title{
+    text-align: center;
+    font-size: 14px;
+    margin: 50px;
+}
+
+/* Card */
+.img-card-1{
+    background: url(../img/bali.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-card-2{
+    background: url(../img/bandung.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-card-3{
+    background: url(../img/jogja.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-group{
+    margin: 30px 10px;
+}
+.see-more{
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 100px;
+}
+.see-more a{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.card-body .card-title{
+    font-weight: 700;
+    font-size: 24px;
+}
+.popular-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.popular-section{
+    margin-bottom: 150px;
+}
+/* Features */
+.features .card img{
+    width: 150px;
+    margin: 20px;
+}
+.features .card{
+    border: none;
+}
+.features-section{
+    margin-bottom: 150px;
+}
+
+/* Footer */
+.footer-section{
+    padding-top: 80px;
+    padding-bottom: 10px;
+    background-color: #1F2E35;
+}
+.navbar-brand img{
+    width: 30px;
+    margin-right: 5px;
+}
+.soc-med{
+    color: white;
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.soc-med a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #FFC107;
+    text-decoration: none;
+    color: #1F2E35;
+    margin-right: 5px;
+    border-radius: 50px;
+    transition: .3s all;
+}
+.soc-med a:hover{
+    background-color: #1F2E35;
+    color: #FFC107;
+}
+.footer-title{
+    transition: .3s all;
+    color: white;
+}
+.footer-title:hover{
+    color: #FFC107;
+}
+.footer h5{
+    color: white;
+    font-weight: 500;
+}
+.footer ul li a, .footer ul li{
+    color: rgba(255, 255, 255, .5);
+    font-weight: 300;
+}
+/* Copyright */
+.copyright{
+    color: white;
+    margin-top: 80px;
+    font-weight: 300;
+}
+
+
+/* utility */
+h3{
+    font-weight: 600;
+    font-size: 2em;
+}
+.card{
+    margin: 10px;
+}
+.img{
+    height: 400px;
+    background-color: blue;
+}
+.star{
+    color: #FFC107;
+}
+
+/* DESKTOP */
+@media (min-width: 992px){
+    .navbar-brand{
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+    .nav-item{
+            font-size: 1.1em;
+    }
+
+    /* Jumbotron */
+    .jumbotron{
+        margin-top: 30px;
+    }
+    .jumbotron img{
+        position: relative;
+        margin-bottom: 0;
+    }
+    .jumbo-left {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        flex-direction: column;
+    }
+
+    .jumbo-left h2 {
+        color: white;
+        font-size: 56px;
+        font-weight: 700;
+    }
+    .jumbo-left p{
+        font-size: 1em;
+    }
+    /* why */
+    .why-title{
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+/* Typewriter */
+.jumbotron .typewriter {
+    font-family: sans-serif;
+    color: #fff;
+    display: block;
+}
+
+.jumbotron .typewriter-text {
+    padding-right: 10px;
+    color: #FFC107;
+    border-right: solid #FFC107 7px;
+    animation: cursor 1s ease-in-out infinite;
+    font-weight: bold;
+}
+
+@keyframes cursor {
+    from {
+        border-color: #FFC107;
+    }
+
+    to {
+        border-color: transparent;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .typewriter {
+        font-size: 56px;
+    }
+}
+
+@media (min-width: 768px) {
+    .typewriter {
+        font-size: 56px;
+    }
+}
+/* modal */
